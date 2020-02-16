@@ -1,0 +1,62 @@
+page-internet {
+
+    [cards] {
+        .grid-full ion-col {
+            flex : 0 0 50%;
+            max-width:50%;
+            padding: 5px 0;
+        }
+        .col {
+            padding: 5px 0;
+        }
+        .grid-full .row {
+            padding-top: 10px;
+        }
+        button {
+            margin:  0 0 0 12px;
+            width: calc(100% - 10px);
+            padding: 30px;         
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.10);
+            border-radius: 15px;
+            h1 {
+                font-weight: 400;
+                font-size: 2.5rem;
+
+            }
+            p {
+                font-weight: 100;
+                font-size: 1.5rem;
+            }
+        }
+        .card {
+            margin:  0 0 0 12px;
+            width: calc(100% - 10px);
+            padding: 30px;
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.10);
+            border-radius: 10px;
+            h1 {
+                font-weight: 400;
+                font-size: 2.5rem;
+
+            }
+            p {
+                font-weight: 100;
+                font-size: 1.5rem;
+            }
+        }
+        [orange] {
+            color: orangered;
+            font-weight: bold;
+        }
+        [green] {
+            color: green;
+        }
+        [blue] {
+            color: cyan;
+        }
+        [dark] {
+            color: black;
+        }
+    }
+
+}
