@@ -1,13 +1,15 @@
-import { Component } from "@angular/core";
+import { Component } from '@angular/core';
+import { NavController, NavParams } from 'ionic-angular';
 import { CallNumber } from '@ionic-native/call-number';
 import { AlertController } from 'ionic-angular';
 import { OperatorMattelProvider } from "../../providers/operators/operator-mattel";
 
 @Component({
-  selector: 'page-dialer',
-  templateUrl: 'dialer.html',
+  selector: 'page-confort',
+  templateUrl: 'confort.html',
 })
-export class DialerPage {
+export class ConfortPage {
+
   startNo:string;
   endNo:string='#';
   inputNo:number;

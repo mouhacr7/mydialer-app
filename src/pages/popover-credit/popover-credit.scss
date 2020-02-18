@@ -1,7 +1,12 @@
 page-popover-credit {
-    .popover-ios {
+    .popover-ios .popover-content {
         border-radius: 10px;
-        width: 314px !important;
+        width: 316px;
+        min-width: 0;
+        min-height: 0;
+        max-height: 90%;
+        color: #000;
+        background: #fff;
     }
     width: 314px !important;
     .btn-pop-credit {

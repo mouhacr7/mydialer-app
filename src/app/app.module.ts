@@ -12,13 +12,16 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { InternetPage } from '../pages/internet/internet';
 import { MessagesPage } from '../pages/messages/messages';
 import { PopoverCreditPage } from '../pages/popover-credit/popover-credit';
+import { ConfortPage } from '../pages/confort/confort';
 
 //Plugins
 import { CallNumber } from '@ionic-native/call-number';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import { ThemeProvider } from '../providers/theme/theme';
-import { IntModalComponent } from '../components/int-modal/int-modal';
+import { OperatorMattelProvider } from '../providers/operators/operator-mattel';
+import { OperatorMauritelProvider } from '../providers/operators/operator-mauritel';
+import { OperatorChinguitelProvider } from '../providers/operators/operator-chinguitel';
+
 
 
 @NgModule({
@@ -30,7 +33,7 @@ import { IntModalComponent } from '../components/int-modal/int-modal';
     TabsPage,
     InternetPage,
     MessagesPage,
-    IntModalComponent,
+    ConfortPage,
     PopoverCreditPage
   ],
   imports: [
@@ -46,6 +49,7 @@ import { IntModalComponent } from '../components/int-modal/int-modal';
     TabsPage,
     InternetPage,
     MessagesPage,
+    ConfortPage,
     PopoverCreditPage
   ],
   providers: [
@@ -53,9 +57,10 @@ import { IntModalComponent } from '../components/int-modal/int-modal';
     SplashScreen,
     CallNumber,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    ThemeProvider
+    OperatorMattelProvider,
+    OperatorMauritelProvider,
+    OperatorChinguitelProvider
   ],
-  schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
-	exports: [IntModalComponent]
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
 export class AppModule {}

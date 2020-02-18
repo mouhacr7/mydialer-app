@@ -4,6 +4,7 @@ import { DialerPage } from '../dialer/dialer';
 import { PopoverController } from 'ionic-angular';
 import { PopoverCreditPage } from '../popover-credit/popover-credit';
 import { CallNumber } from '@ionic-native/call-number';
+import { ConfortPage } from '../confort/confort';
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
@@ -19,10 +20,12 @@ export class HomePage {
               private callNumber: CallNumber,
               public popoverCtrl: PopoverController ) {
               
-
   }
   goToDialer() {
     this.navCtrl.push(DialerPage);
+  }
+  goToConfort() {
+    this.navCtrl.push(ConfortPage);
   }
   cptMattel() {
     this.callNumber.callNumber("*130#", true)
@@ -34,10 +37,6 @@ export class HomePage {
     popover.present({
       ev: myEvent
     });
-  }
-  goToCredit() {
-      this.viewCtrl.dismiss();
-      this.appCtrl.getRootNav().push(DialerPage);
   }
 
 }
