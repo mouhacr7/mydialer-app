@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+
 import { Injectable } from '@angular/core';
 
 /*
@@ -10,7 +10,7 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class OperatorChinguitelProvider {
 
-  constructor(public http: HttpClient) {
+  constructor() {
     console.log('Hello OperatorChinguitelProvider Provider');
   }
 

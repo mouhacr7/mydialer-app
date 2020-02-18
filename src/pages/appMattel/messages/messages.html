@@ -1,0 +1,31 @@
+<ion-header>
+    <ion-navbar>
+      <ion-title>Activer forfait Confort</ion-title>
+    </ion-navbar>
+        <br />
+    <ion-segment color="white" mode="ios" [(ngModel)]="section">
+      <ion-segment-button value="one">
+       <span>7 jours</span>
+      </ion-segment-button>
+      <ion-segment-button value="two">
+        <span>30 jours</span>
+      </ion-segment-button>
+    </ion-segment>
+  </ion-header>
+  <ion-content padding [ngSwitch]="section">
+    <div *ngSwitchCase="'one'">
+      <ion-list>
+        <ion-card>
+          <img class="" src="assets/imgs/sms/Specimen150Sms.png" (click)="presentConfirm150SMS()">
+        </ion-card>
+      </ion-list>
+    </div>
+    <div *ngSwitchCase="'two'">
+      <ion-list>
+        <ion-card>
+          <img class="" src="assets/imgs/sms/Specimen300Sms.png" (click)="presentConfirm300SMS()">
+        </ion-card>
+      </ion-list>
+    </div>
+   
+  </ion-content>

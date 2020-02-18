@@ -5,14 +5,14 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 
 //Pages
 import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
-import { DialerPage } from './../pages/dialer/dialer';
-import { TabsPage } from '../pages/tabs/tabs';
-import { InternetPage } from '../pages/internet/internet';
-import { MessagesPage } from '../pages/messages/messages';
-import { PopoverCreditPage } from '../pages/popover-credit/popover-credit';
-import { ConfortPage } from '../pages/confort/confort';
+import { HomePage } from '../pages/appMattel/home/home';
+import { DialerPage } from './../pages/appMattel/dialer/dialer';
+import { TabsPage } from '../pages/appMattel/tabs/tabs';
+import { InternetPage } from '../pages/appMattel/internet/internet';
+import { MessagesPage } from '../pages/appMattel/messages/messages';
+import { PopoverCreditPage } from '../pages/appMattel/popover-credit/popover-credit';
+import { ConfortPage } from '../pages/appMattel/confort/confort';
+import { TransferPage } from '../pages/transfer/transfer';
 
 //Plugins
 import { CallNumber } from '@ionic-native/call-number';
@@ -24,16 +24,17 @@ import { OperatorChinguitelProvider } from '../providers/operators/operator-chin
 
 
 
+
 @NgModule({
   declarations: [
     MyApp,
-    HomePage,
-    ListPage,
+    HomePage, 
     DialerPage,
     TabsPage,
     InternetPage,
     MessagesPage,
     ConfortPage,
+    TransferPage,
     PopoverCreditPage
   ],
   imports: [
@@ -44,12 +45,12 @@ import { OperatorChinguitelProvider } from '../providers/operators/operator-chin
   entryComponents: [
     MyApp,
     HomePage,
-    ListPage,
     DialerPage,
     TabsPage,
     InternetPage,
     MessagesPage,
     ConfortPage,
+    TransferPage,
     PopoverCreditPage
   ],
   providers: [

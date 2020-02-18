@@ -1,0 +1,101 @@
+<ion-header>
+  <ion-toolbar>
+    <!-- <ion-buttons start>
+      <button ion-button icon-only>
+        <!-- <ion-icon name="menu"></ion-icon> -->
+        <!-- <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons> -->
+    <ion-title>Bonjour, <b>Mohamed</b></ion-title>
+    <ion-buttons end>
+        <button ion-button icon-only>
+          <ion-icon name="heart"></ion-icon>
+        </button>
+      </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content padding>
+  <div class="row">
+    <div class="col"><h4 class="suivi1">Suivi Consommation </h4></div>
+    <div class="col">
+      <button class="btn-credit" ion-button icon-only>
+        <ion-badge *ngIf="n" color="accent">{{ n }}</ion-badge>
+        1000.00 UM
+      </button>
+    </div>
+</div>
+  <div cards>
+    <div class="grid-full">
+        <ion-row class="row-top">                
+                <ion-card>      
+                    <div class="col"> <img class="" src="assets/imgs/suivi_card.jpg"></div>
+                  <!-- <h2 class="suivi2"><strong>Suivi Consommation</strong></h2> -->
+                  <ion-list>
+                    <ion-item>
+                          <span item-start><b>Crédit</b></span>
+                          <span item-end>100.00UM</span>
+                    </ion-item>
+                    </ion-list>
+                    <ion-list>
+                      <ion-item>
+                        <span item-start><b>Pass internet</b></span>
+                        <span item-end>2Go 100Mo</span>
+                    </ion-item>
+                    </ion-list>
+                    <ion-list>
+                      <ion-item>
+                        <span item-start><b>Bonus national</b></span>
+                        <span item-end>200.00UM</span>
+                    </ion-item>
+                  </ion-list>
+                  <div class="row">
+                    <div class="col"></div>
+                    <div class="col">
+                      <button class="btn-details" ion-button color="dark" outline (click)=cptMattel()>Voir détails</button>
+                    </div>
+                    <div class="col"></div>
+                </div>
+                </ion-card>     
+        </ion-row>
+    </div>
+  </div>
+  <br>
+  <!-- this is a more narrow, thumb'isch card slider -->
+  <ion-slides class="slides1" slidesPerView="2.18s"  spaceBetween="0">
+    <ion-slide class="sw-slide">
+      <ion-card class="ion-text-start">
+        <img src="assets/imgs/services/specimen_card_credit.png" (click)="presentPopover($event)">
+      </ion-card>
+    </ion-slide>
+    <ion-slide class="sw-slide">
+      <ion-card class="ion-text-start">
+        <img src="assets/imgs/services/specimen_forfait_nat.png" (click)="goToDialer()">
+      </ion-card>
+    </ion-slide>
+    <ion-slide class="sw-slide">
+      <ion-card class="ion-text-start">
+        <img src="assets/imgs/services/specimen_card_internet.png" (click)="goToInternet()">
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+    <!-- this is a more narrow, thumb'isch card slider -->
+    <ion-slides class="slides1" slidesPerView="2.18s"  spaceBetween="0">
+      <ion-slide class="sw-slide">
+        <ion-card class="ion-text-start" >
+          <img src="assets/imgs/services/specimen_Confort.png" (click)="goToConfort()">
+        </ion-card>
+      </ion-slide>
+    <ion-slide class="sw-slide">
+      <ion-card class="ion-text-start">
+        <img src="assets/imgs/services/specimen_card_sms.png"  (click)="goToSms()">       
+      </ion-card>
+    </ion-slide>
+    <ion-slide class="sw-slide">
+      <ion-card class="ion-text-start">
+        <img src="assets/imgs/services/specimen_card_transfert.png"  (click)="presentAlert()">
+      </ion-card>
+    </ion-slide>
+    
+  </ion-slides>
+
+</ion-content>

@@ -4,12 +4,14 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 
-import {TabsPage} from "../pages/tabs/tabs";
+import {TabsPage} from "../pages/appMattel/tabs/tabs";
 
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
+
+  //Background home root color=rgb(171, 17, 78) #ab114e
 
   rootPage: any = TabsPage;
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {

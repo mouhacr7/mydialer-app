@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Activer forfait Confort</ion-title>
+  </ion-navbar>
+<br />
+  <ion-segment color="white" mode="ios" [(ngModel)]="section">
+    <ion-segment-button value="one">
+     <span>3 jours</span>
+    </ion-segment-button>
+    <ion-segment-button value="two">
+      <span>7 jours</span>
+    </ion-segment-button>
+    <ion-segment-button value="three">
+      <span>15 jours</span>
+    </ion-segment-button>
+    <ion-segment-button value="four">
+      <span>30 jours</span>
+    </ion-segment-button>
+  </ion-segment>
+
+</ion-header>
+<ion-content padding [ngSwitch]="section">
+  <div *ngSwitchCase="'one'">
+    <ion-list>
+      <ion-card>
+        <img class="" src="assets/imgs/Confort/SpecimenConfort1000.png" (click)="presentConfirm1h()">
+      </ion-card>
+    </ion-list>
+  </div>
+  <div *ngSwitchCase="'two'">
+    <ion-list>
+      <ion-card>
+        <img class="" src="assets/imgs/Confort/SpecimenConfort2000.png" (click)="presentConfirm2h()">
+      </ion-card>
+    </ion-list>
+  </div>
+  <div *ngSwitchCase="'three'">
+    <ion-list>
+      <ion-card>
+        <img class="" src="assets/imgs/Confort/SpecimenConfort3000.png" (click)="presentConfirm3h()">
+      </ion-card>
+    </ion-list>
+  </div>
+  <div *ngSwitchCase="'four'">
+    <ion-list>
+      <ion-card>
+        <img class="" src="assets/imgs/Confort/SpecimenConfort4000.png" (click)="presentConfirm4h()">
+      </ion-card>
+    </ion-list>
+  </div>
+ 
+</ion-content>
