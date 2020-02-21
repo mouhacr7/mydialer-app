@@ -1,0 +1,164 @@
+page-home-root {
+    ion-toolbar {
+        .header-ios {
+            border-style: none !important;
+        }
+    
+        .toolbar-background-ios {
+            background: none;
+            border-style: none;
+        }
+        .toolbar-background-md {
+            background: none;
+            border: none;
+        }
+        ion-title {
+            .toolbar-title-ios {
+            color: white;
+            overflow: visible;
+
+            }
+            .toolbar-title-md {
+                color: white;
+                overflow: visible;
+
+            }
+            .title-md {
+                color: white;
+            }
+        }
+        ion-buttons {
+            // position: fixed;
+            .bar-button-md {
+                color: white;
+            }
+           .bar-button-default-ios {
+                color: white;
+            }
+            
+        } 
+        
+    }
+    .popover-ios .popover-content {
+        border-radius: 10px;
+        width: 410px !important;
+        min-width: 0;
+        min-height: 0;
+        max-height: 90%;
+        color: #000;
+        background: #fff;
+    }
+    .img-stats {
+     
+            display: block;
+            width: 25% !important;
+   
+    }
+    .button-ios.activated {
+        background-color: black;
+    }
+    .suivi1 {
+        color: white;
+        // padding-bottom: inherit;
+    }
+    .suivi2 {
+          font-weight: bold;
+          font-size: 2.2rem;
+        // padding-bottom: inherit;
+    }
+    .btn-credit {
+        padding: 9px !important;
+        background-color: #f87600;
+        border-radius: 10px;
+        
+    }
+    .btn-mattel {
+        padding: 10px !important;
+        border-radius: 4px !important;
+        font-weight: bolder;
+        font-size: smaller;
+        color: white;
+        border: none;
+        background-color: #005ca9;
+        letter-spacing: -1px;
+    }
+    .btn-chinguitel {
+        padding: 10px !important;
+        border-radius: 4px !important;
+        font-weight: bolder;
+        font-size: smaller;
+        color: white;
+        border: none;
+        background-color: #9e306e;
+        letter-spacing: -1px;
+    }
+    .btn-mauritel {
+        padding: 10px !important;
+        border-radius: 4px !important;
+        font-weight: bolder;
+        font-size: smaller;
+        color: white;
+        border: none;
+        background-color:  #3F6B6A;
+        letter-spacing: -1px;
+    }
+    .item-ios {
+        padding-left: 16px;
+        padding-left: 16px;
+        border-radius: 0;
+        position: relative;
+        font-size: 1.4rem;
+    }
+    // [cards] {
+    //     .grid-full ion-col {
+    //         flex : 0 0 50%;
+    //         max-width:50%;
+    //         padding: 5px 0;
+    //     }
+    //     // .row {
+    //     //     padding: -1px 12px;
+    //     //     padding-top: 15px;
+    //     // }
+    //     .col {
+    //         padding: 5px 0;
+    //     }
+    //     .grid-full .row {
+    //         padding-top: 10px;
+    //     }
+        .card {
+            margin:  0 0 0 8px;
+            width: calc(100% - 10px);
+            padding: 10px;
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.10);
+            border-radius: 10px;
+            h1 {
+                font-weight: 400;
+                font-size: 2.5rem;
+
+            }
+            p {
+                font-weight: 100;
+                // font-size: 1.5rem;
+            }
+        }
+    // }
+    .slides1 {
+        height: 25% !important;
+    }
+    .sw-slide {
+        width: 125px !important;
+    }
+    // .card-ios {
+    //     border-radius: 8px !important;
+    // }
+    // .card-ios {
+    //     margin: 12px;
+    //     border-radius: 2px;
+    //     width: calc(55% + #{$content-padding*2});
+    //     font-size: 1.4rem;
+    //     background: #fff;
+    //     -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    //     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    // }
+
+}

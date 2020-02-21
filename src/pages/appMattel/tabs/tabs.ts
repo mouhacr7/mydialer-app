@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { HomePage } from "../home/home";
-import { InternetPage } from './../internet/internet';
+import { InternetPage } from '../internet/internet';
 import { DialerPage } from '../dialer/dialer';
-import { MessagesPage } from './../messages/messages';
+import { MessagesPage } from '../messages/messages';
 
 @Component({
   selector: 'page-tabs',

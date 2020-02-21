@@ -5,6 +5,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 
 import {TabsPage} from "../pages/appMattel/tabs/tabs";
+import { HomeRootPage } from '../pages/home-root/home-root';
 
 @Component({
   templateUrl: 'app.html'
@@ -13,7 +14,7 @@ export class MyApp {
 
   //Background home root color=rgb(171, 17, 78) #ab114e
 
-  rootPage: any = TabsPage;
+  rootPage: any = HomeRootPage;
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
     this.initializeApp();
 
