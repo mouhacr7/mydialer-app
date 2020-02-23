@@ -1,4 +1,11 @@
 page-home {
+    ion-content {
+        --background: none;
+        background-image: url('/assets/imgs/appBack.png');
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
     ion-toolbar {
         .header-ios {
             border-style: none !important;
@@ -68,7 +75,7 @@ page-home {
     }
     .btn-credit {
         padding: 9px !important;
-        background-color: #f87600;
+        background-color: #DD4B39;
         border-radius: 10px;
     }
     .btn-details {

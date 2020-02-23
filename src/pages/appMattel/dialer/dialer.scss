@@ -1,4 +1,11 @@
 page-dialer {
+    ion-content {
+        --background: none;
+        background-image: url('/assets/imgs/appBack.png');
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
     .toolbar-background-ios {
         background: none;
         border-style: none;
@@ -58,7 +65,17 @@ page-dialer {
     }
     .segment-ios .segment-button.segment-activated {
         color: #fff;
-        background-color: #000000;
+        background-color: #DD4B39 !important;
+    }
+    .segment-ios .segment-button {
+        border-color: #DD4B39;
+        line-height: 3rem;
+        color: #000000;
+        background-color: white;
+    }
+    .segment-ios .segment-button {
+        border-width: 0px;
+        border-style: solid;  
     }
     .list-ios {
         margin: 12px 0 0px;

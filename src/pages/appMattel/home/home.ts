@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, App, ViewController, AlertController } from 'ionic-angular';
-
+import { Location } from '@angular/common';
 import { PopoverController } from 'ionic-angular';
 import { PopoverCreditPage } from '../popover-credit/popover-credit';
 import { CallNumber } from '@ionic-native/call-number';
@@ -21,10 +21,16 @@ export class HomePage {
   constructor(public navCtrl: NavController,
               public viewCtrl: ViewController,
               public appCtrl: App,
+              public location: Location,
               private alertCtrl: AlertController,
               private callNumber: CallNumber,
               public popoverCtrl: PopoverController ) {
               
+  }
+  
+
+goBack() {
+    this.location.back();
   }
   goToDialer() {
     this.navCtrl.push(DialerPage);
@@ -39,10 +45,26 @@ export class HomePage {
     this.navCtrl.push(InternetPage);
   }
   
-  presentAlert() {
+  presentAlertTransfert() {
     let alert = this.alertCtrl.create({
       title: 'Désolé',
       message: 'Le service de transfert de crédit est en cours de développement! ce service sera fonctionnel dans la prochaine mise à jour...',
+      buttons: [
+        {
+          text: 'D\'accord',
+          role: 'cancel',
+          handler: () => {
+            console.log('Cancel clicked');
+          }
+        }
+      ]
+    });
+    return alert.present();
+  }
+  presentAlertKado() {
+    let alert = this.alertCtrl.create({
+      title: 'Désolé',
+      message: 'Le service Kado est en cours de développement! ce service sera fonctionnel dans la prochaine mise à jour...',
       buttons: [
         {
           text: 'D\'accord',

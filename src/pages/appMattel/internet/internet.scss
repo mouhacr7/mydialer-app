@@ -1,5 +1,11 @@
 page-internet {
-
+    ion-content {
+        --background: none;
+        background-image: url('/assets/imgs/appBack.png');
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
     .toolbar-background-ios {
         background: none;
         border-style: none;
@@ -163,6 +169,12 @@ page-internet {
     }
     .card-ios {
         border-radius: 8px !important;
+    }
+    .mattel-weekend {
+        height: 40%;
+    }
+    .card-mattel {
+        display: contents;
     }
 
 

@@ -2,12 +2,6 @@ import { Injectable } from '@angular/core';
 import { CallNumber } from '@ionic-native/call-number';
 import { AlertController } from 'ionic-angular';
 
-/*
-  Generated class for the OperatorMattelProvider provider.
-
-  See https://angular.io/guide/dependency-injection for more info on providers
-  and Angular DI.
-*/
 @Injectable()
 export class OperatorMattelProvider {
 
@@ -336,8 +330,8 @@ export class OperatorMattelProvider {
     });
     return alert5minuit.present();
   }
-  present20sms() {
-    let alert20sms = this.alertCtrl.create({
+  present50mominuit() {
+    let alert50mominuit = this.alertCtrl.create({
       title: 'Confirmer votre opération',
       message: 'Voulez-vous vraiment valider l\'opération?',
       buttons: [
@@ -355,15 +349,15 @@ export class OperatorMattelProvider {
                 .then(res => console.log('Launched dialer!', res))
                 .catch(res => console.log('Error launching dialer', res));
         
-            console.log('Validate clicked (20smsMattel)');
+            console.log('Validate clicked (50mominuitMattel)');
           }
         }
       ]
     });
-    return alert20sms.present();
+    return alert50mominuit.present();
   }
-  present50mominuit() {
-    let alert50mominuit = this.alertCtrl.create({
+  present20sms() {
+    let alert20sms = this.alertCtrl.create({
       title: 'Confirmer votre opération',
       message: 'Voulez-vous vraiment valider l\'opération?',
       buttons: [
@@ -381,13 +375,13 @@ export class OperatorMattelProvider {
                 .then(res => console.log('Launched dialer!', res))
                 .catch(res => console.log('Error launching dialer', res));
         
-            console.log('Validate clicked (50mominuitMattel)');
+            console.log('Validate clicked (20smsMattel)');
           }
         }
       ]
     });
-    return alert50mominuit.present();
-  }
+    return alert20sms.present();
+  }  
   //Forfait SMS *164#
   present150SMS() {
     let alert150SMS = this.alertCtrl.create({
@@ -624,4 +618,344 @@ export class OperatorMattelProvider {
     });
     return alert1gosoir.present();
   }
+  //Forfait Kado 
+  presentsubsKado() {
+    let alertsubsKado = this.alertCtrl.create({
+      title: 'Confirmer votre opération',
+      message: 'Voulez-vous vraiment valider l\'opération?',
+      buttons: [
+        {
+          text: 'Annuler',
+          role: 'cancel',
+          handler: () => {
+            console.log('Cancel clicked');
+          }
+        },
+        {
+          text: 'Valider',
+          handler: () => {
+              this.callNumber.callNumber("*190*1#", true)
+                .then(res => console.log('Launched dialer!', res))
+                .catch(res => console.log('Error launching dialer', res));
+        
+            console.log('Validate clicked (subsKadoMattel)');
+          }
+        }
+      ]
+    });
+    return alertsubsKado.present();
+  }
+  presentmyKado() {
+    let alertmyKado = this.alertCtrl.create({
+      title: 'Confirmer votre opération',
+      message: 'Voulez-vous vraiment valider l\'opération?',
+      buttons: [
+        {
+          text: 'Annuler',
+          role: 'cancel',
+          handler: () => {
+            console.log('Cancel clicked');
+          }
+        },
+        {
+          text: 'Valider',
+          handler: () => {
+              this.callNumber.callNumber("*190*2#", true)
+                .then(res => console.log('Launched dialer!', res))
+                .catch(res => console.log('Error launching dialer', res));
+        
+            console.log('Validate clicked (myKadoMattel)');
+          }
+        }
+      ]
+    });
+    return alertmyKado.present();
+  }
+  presentKado15min() {
+    let alertKado15min = this.alertCtrl.create({
+      title: 'Confirmer votre opération',
+      message: 'Voulez-vous vraiment valider l\'opération?',
+      buttons: [
+        {
+          text: 'Annuler',
+          role: 'cancel',
+          handler: () => {
+            console.log('Cancel clicked');
+          }
+        },
+        {
+          text: 'Valider',
+          handler: () => {
+              this.callNumber.callNumber("*190*3*1*1#", true)
+                .then(res => console.log('Launched dialer!', res))
+                .catch(res => console.log('Error launching dialer', res));
+        
+            console.log('Validate clicked (Kado15minMattel)');
+          }
+        }
+      ]
+    });
+    return alertKado15min.present();
+  }
+  presentKado30min() {
+    let alertKado30min = this.alertCtrl.create({
+      title: 'Confirmer votre opération',
+      message: 'Voulez-vous vraiment valider l\'opération?',
+      buttons: [
+        {
+          text: 'Annuler',
+          role: 'cancel',
+          handler: () => {
+            console.log('Cancel clicked');
+          }
+        },
+        {
+          text: 'Valider',
+          handler: () => {
+              this.callNumber.callNumber("*190*3*1*2#", true)
+                .then(res => console.log('Launched dialer!', res))
+                .catch(res => console.log('Error launching dialer', res));
+        
+            console.log('Validate clicked (Kado30minMattel)');
+          }
+        }
+      ]
+    });
+    return alertKado30min.present();
+  }
+  presentKado1h() {
+    let alertKado1h = this.alertCtrl.create({
+      title: 'Confirmer votre opération',
+      message: 'Voulez-vous vraiment valider l\'opération?',
+      buttons: [
+        {
+          text: 'Annuler',
+          role: 'cancel',
+          handler: () => {
+            console.log('Cancel clicked');
+          }
+        },
+        {
+          text: 'Valider',
+          handler: () => {
+              this.callNumber.callNumber("*190*3*1*3#", true)
+                .then(res => console.log('Launched dialer!', res))
+                .catch(res => console.log('Error launching dialer', res));
+        
+            console.log('Validate clicked (Kado1hMattel)');
+          }
+        }
+      ]
+    });
+    return alertKado1h.present();
+  }
+  presentKado100mo() {
+    let alertKado100mo = this.alertCtrl.create({
+      title: 'Confirmer votre opération',
+      message: 'Voulez-vous vraiment valider l\'opération?',
+      buttons: [
+        {
+          text: 'Annuler',
+          role: 'cancel',
+          handler: () => {
+            console.log('Cancel clicked');
+          }
+        },
+        {
+          text: 'Valider',
+          handler: () => {
+              this.callNumber.callNumber("*190*3*2*1#", true)
+                .then(res => console.log('Launched dialer!', res))
+                .catch(res => console.log('Error launching dialer', res));
+        
+            console.log('Validate clicked (Kado100moMattel)');
+          }
+        }
+      ]
+    });
+    return alertKado100mo.present();
+  }
+  presentKado300mo() {
+    let alertKado300mo = this.alertCtrl.create({
+      title: 'Confirmer votre opération',
+      message: 'Voulez-vous vraiment valider l\'opération?',
+      buttons: [
+        {
+          text: 'Annuler',
+          role: 'cancel',
+          handler: () => {
+            console.log('Cancel clicked');
+          }
+        },
+        {
+          text: 'Valider',
+          handler: () => {
+              this.callNumber.callNumber("*190*3*2*2#", true)
+                .then(res => console.log('Launched dialer!', res))
+                .catch(res => console.log('Error launching dialer', res));
+        
+            console.log('Validate clicked (Kado300moMattel)');
+          }
+        }
+      ]
+    });
+    return alertKado300mo.present();
+  }
+  presentKado500mo() {
+    let alertKado500mo = this.alertCtrl.create({
+      title: 'Confirmer votre opération',
+      message: 'Voulez-vous vraiment valider l\'opération?',
+      buttons: [
+        {
+          text: 'Annuler',
+          role: 'cancel',
+          handler: () => {
+            console.log('Cancel clicked');
+          }
+        },
+        {
+          text: 'Valider',
+          handler: () => {
+              this.callNumber.callNumber("*190*3*2*3#", true)
+                .then(res => console.log('Launched dialer!', res))
+                .catch(res => console.log('Error launching dialer', res));
+        
+            console.log('Validate clicked (Kado500moMattel)');
+          }
+        }
+      ]
+    });
+    return alertKado500mo.present();
+  }
+  presentKado1go() {
+    let alertKado1go = this.alertCtrl.create({
+      title: 'Confirmer votre opération',
+      message: 'Voulez-vous vraiment valider l\'opération?',
+      buttons: [
+        {
+          text: 'Annuler',
+          role: 'cancel',
+          handler: () => {
+            console.log('Cancel clicked');
+          }
+        },
+        {
+          text: 'Valider',
+          handler: () => {
+              this.callNumber.callNumber("*190*3*2*4#", true)
+                .then(res => console.log('Launched dialer!', res))
+                .catch(res => console.log('Error launching dialer', res));
+        
+            console.log('Validate clicked (Kado1goMattel)');
+          }
+        }
+      ]
+    });
+    return alertKado1go.present();
+  }
+  presentKado25SMS() {
+    let alertKado25SMS = this.alertCtrl.create({
+      title: 'Confirmer votre opération',
+      message: 'Voulez-vous vraiment valider l\'opération?',
+      buttons: [
+        {
+          text: 'Annuler',
+          role: 'cancel',
+          handler: () => {
+            console.log('Cancel clicked');
+          }
+        },
+        {
+          text: 'Valider',
+          handler: () => {
+              this.callNumber.callNumber("*190*3*3*1#", true)
+                .then(res => console.log('Launched dialer!', res))
+                .catch(res => console.log('Error launching dialer', res));
+        
+            console.log('Validate clicked (Kado1goMattel)');
+          }
+        }
+      ]
+    });
+    return alertKado25SMS.present();
+  }
+  presentKado50SMS() {
+    let alertKado50SMS = this.alertCtrl.create({
+      title: 'Confirmer votre opération',
+      message: 'Voulez-vous vraiment valider l\'opération?',
+      buttons: [
+        {
+          text: 'Annuler',
+          role: 'cancel',
+          handler: () => {
+            console.log('Cancel clicked');
+          }
+        },
+        {
+          text: 'Valider',
+          handler: () => {
+              this.callNumber.callNumber("*190*3*3*2#", true)
+                .then(res => console.log('Launched dialer!', res))
+                .catch(res => console.log('Error launching dialer', res));
+        
+            console.log('Validate clicked (Kado50SMSMattel)');
+          }
+        }
+      ]
+    });
+    return alertKado50SMS.present();
+  }
+  presentKado150SMS() {
+    let alertKado150SMS = this.alertCtrl.create({
+      title: 'Confirmer votre opération',
+      message: 'Voulez-vous vraiment valider l\'opération?',
+      buttons: [
+        {
+          text: 'Annuler',
+          role: 'cancel',
+          handler: () => {
+            console.log('Cancel clicked');
+          }
+        },
+        {
+          text: 'Valider',
+          handler: () => {
+              this.callNumber.callNumber("*190*3*3*3#", true)
+                .then(res => console.log('Launched dialer!', res))
+                .catch(res => console.log('Error launching dialer', res));
+        
+            console.log('Validate clicked (Kado150SMSMattel)');
+          }
+        }
+      ]
+    });
+    return alertKado150SMS.present();
+  }
+  presentKado300SMS() {
+    let alertKado300SMS = this.alertCtrl.create({
+      title: 'Confirmer votre opération',
+      message: 'Voulez-vous vraiment valider l\'opération?',
+      buttons: [
+        {
+          text: 'Annuler',
+          role: 'cancel',
+          handler: () => {
+            console.log('Cancel clicked');
+          }
+        },
+        {
+          text: 'Valider',
+          handler: () => {
+              this.callNumber.callNumber("*190*3*3*4#", true)
+                .then(res => console.log('Launched dialer!', res))
+                .catch(res => console.log('Error launching dialer', res));
+        
+            console.log('Validate clicked (Kado300SMSMattel)');
+          }
+        }
+      ]
+    });
+    return alertKado300SMS.present();
+  }
+
 }
