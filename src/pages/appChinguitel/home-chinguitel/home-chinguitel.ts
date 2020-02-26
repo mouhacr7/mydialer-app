@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams, ViewController, App, AlertController, PopoverController } from 'ionic-angular';
+import { CallNumber } from '@ionic-native/call-number';
 
 @Component({
   selector: 'page-home-chinguitel',
@@ -7,11 +8,16 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class HomeChinguitelPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
+  
+  constructor(public navCtrl: NavController,
+    public viewCtrl: ViewController,
+    public appCtrl: App ) {}
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad HomeChinguitelPage');
   }
+  goBack() {
+    this.appCtrl.getRootNav().pop();
+  } 
 
 }

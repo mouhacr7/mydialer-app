@@ -8,6 +8,7 @@ import { DialerPage } from '../dialer/dialer';
 import { ConfortPage } from '../confort/confort';
 import { MessagesPage } from '../messages/messages';
 import { InternetPage } from '../internet/internet';
+import { HomeRootPage } from '../../home-root/home-root';
 
 @Component({
   selector: 'page-home',
@@ -27,11 +28,13 @@ export class HomePage {
               public popoverCtrl: PopoverController ) {
               
   }
-  
 
-goBack() {
-    this.location.back();
+  ionViewWillLeave() {
+    console.log("Looks like I'm about to leave :(");
   }
+  goBack() {
+    this.appCtrl.getRootNav().pop();
+  }  
   goToDialer() {
     this.navCtrl.push(DialerPage);
   }

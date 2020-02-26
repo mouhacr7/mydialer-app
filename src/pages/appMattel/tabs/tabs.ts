@@ -10,13 +10,11 @@ import { MessagesPage } from '../messages/messages';
   templateUrl: 'tabs.html',
 })
 export class TabsPage {
-
   tab1Root = HomePage;
   tab2Root = DialerPage;
   tab3Root = InternetPage;
   tab4Root = MessagesPage;
   loaded:   boolean = false;
-  tabIndex: number  = 0;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) { 
   }

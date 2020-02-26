@@ -29,7 +29,7 @@
       </ion-list>
       <ion-list>
         <ion-card>
-          <img class="" src="../assets/imgs/H_national/Forfait15.png">
+          <img class="" src="../assets/imgs/H_national/Forfait15.png" (click)="presentConfirm15minNat()">
         </ion-card>
       </ion-list>
       <ion-list>
@@ -46,7 +46,7 @@
       </ion-list>
     <ion-list>
       <ion-card>
-        <img class="" src="../assets/imgs/H_national/Forfait30minNat.png" (click)="presentConfirm30min()">
+        <img class="" src="../assets/imgs/H_national/Forfait30minNat.png" (click)="presentConfirm30minNat()">
       </ion-card>
       </ion-list>
   </div>
@@ -58,24 +58,24 @@
       </ion-list>
     <ion-list>
       <ion-card>
-        <img class="" src="../assets/imgs/H_national/Forfait1hNat.png" (click)="presentConfirm60min()">
+        <img class="" src="../assets/imgs/H_national/Forfait1hNat.png" (click)="presentConfirm1hNat()">
       </ion-card>
       </ion-list>
   </div>
   <div *ngSwitchCase="'four'">
     <ion-list>
       <ion-card>
-        <img class="" src="../assets/imgs/minuit/Forfait5min.png">
+        <img class="" src="../assets/imgs/minuit/Forfait5min.png" (click)="presentConfirm5minuit()">
       </ion-card>
     </ion-list>
     <ion-list>
       <ion-card>
-        <img class="" src="../assets/imgs/minuit/Forfait50mo.png">
+        <img class="" src="../assets/imgs/minuit/Forfait50mo.png" (click)="presentConfirm50mominuit()">
       </ion-card>
     </ion-list>
     <ion-list>
       <ion-card>
-        <img class="" src="../assets/imgs/minuit/Forfait20sms.png">
+        <img class="" src="../assets/imgs/minuit/Forfait20sms.png" (click)="presentConfirm20sms()">
       </ion-card>
     </ion-list>
   </div>
