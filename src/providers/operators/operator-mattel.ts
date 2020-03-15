@@ -872,7 +872,7 @@ export class OperatorMattelProvider {
                 .then(res => console.log('Launched dialer!', res))
                 .catch(res => console.log('Error launching dialer', res));
         
-            console.log('Validate clicked (Kado1goMattel)');
+            console.log('Validate clicked (Kado25smsMattel)');
           }
         }
       ]

@@ -1,0 +1,96 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Programme Mattel KADO</ion-title>
+  </ion-navbar>
+      <br />
+  <ion-segment color="white" mode="ios" [(ngModel)]="section">
+    <ion-segment-button value="one">
+     <span>Prog. KADO</span>
+    </ion-segment-button>
+    <ion-segment-button value="two">
+      <span>Appel</span>
+    </ion-segment-button>
+    <ion-segment-button value="three">
+     <span>Internet</span>
+    </ion-segment-button>
+    <ion-segment-button value="four">
+      <span>SMS</span>
+    </ion-segment-button>
+  </ion-segment>
+</ion-header>
+<ion-content padding [ngSwitch]="section">
+  <div *ngSwitchCase="'one'">
+    <ion-list>
+      <ion-card>
+        <img class="" src="../assets/imgs/Kado/SpecimenKado.png" (click)="presentsubsKado()">
+      </ion-card>
+    </ion-list>
+    <ion-list>
+      <ion-card>
+        <img class=""  src="../assets/imgs/Kado/SpecimenPointsKado.png" (click)="presentmyKado()">
+      </ion-card>
+    </ion-list>
+  </div>
+  <div *ngSwitchCase="'two'">
+    <ion-list>
+      <ion-card>
+        <img class="" src="../assets/imgs/Kado/SpecimenKado15min.png" (click)="presentKado15min()">
+      </ion-card>
+    </ion-list>
+    <ion-list>
+      <ion-card>
+        <img class="" src="../assets/imgs/Kado/SpecimenKado30min.png" (click)="presentKado30min()">
+      </ion-card>
+    </ion-list>
+    <ion-list>
+      <ion-card>
+        <img class="" src="../assets/imgs/Kado/SpecimenKado60min.png" (click)="presentKado1h()">
+      </ion-card>
+    </ion-list>
+  </div>
+  <div *ngSwitchCase="'three'">
+    <ion-list>
+      <ion-card>
+        <img class="" src="../assets/imgs/Kado/SpecimenKado100mo.png" (click)="presentKado100mo()">
+      </ion-card>
+    </ion-list>
+    <ion-list>
+      <ion-card>
+        <img class="" src="../assets/imgs/Kado/SpecimenKado300mo.png" (click)="presentKado300mo()">
+      </ion-card>
+    </ion-list>
+    <ion-list>
+      <ion-card>
+        <img class="" src="../assets/imgs/Kado/SpecimenKado500mo.png" (click)="presentKado500mo()">
+      </ion-card>
+    </ion-list>
+    <ion-list>
+      <ion-card>
+        <img class="" src="../assets/imgs/Kado/SpecimenKado1000mo.png" (click)="presentKado1go()">
+      </ion-card>
+    </ion-list>
+  </div>
+  <div *ngSwitchCase="'four'">
+    <ion-list>
+      <ion-card>
+        <img class="" src="../assets/imgs/Kado/SpecimenKado25sms.png" (click)="presentKado25SMS()">
+      </ion-card>
+    </ion-list>
+    <ion-list>
+      <ion-card>
+        <img class="" src="../assets/imgs/Kado/SpecimenKado50sms.png" (click)="presentKado50SMS()">
+      </ion-card>
+    </ion-list>
+    <ion-list>
+      <ion-card>
+        <img class="" src="../assets/imgs/Kado/SpecimenKado150sms.png" (click)="presentKado150SMS()">
+      </ion-card>
+    </ion-list>
+    <ion-list>
+      <ion-card>
+        <img class="" src="../assets/imgs/Kado/SpecimenKado300sms.png" (click)="presentKado300SMS()">
+      </ion-card>
+    </ion-list>
+  </div>
+ 
+</ion-content>

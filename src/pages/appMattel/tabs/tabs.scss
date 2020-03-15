@@ -1,3 +1,15 @@
 page-tabs {
+    .tabs-ios .tab-button[aria-selected=true] .tab-button-icon {
+        color:#005fa5;
+    }
+    .tabs-ios .tab-button:hover:not(.disable-hover), .tabs-ios .tab-button[aria-selected=true] {
+        color: #005fa5;
+    }
+    .tabs-ios .tab-button {
+    
+        font-size: 11px;
+        font-weight: 800;
+        
+    }
 
 }

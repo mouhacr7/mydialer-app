@@ -8,7 +8,7 @@ import { DialerPage } from '../dialer/dialer';
 import { ConfortPage } from '../confort/confort';
 import { MessagesPage } from '../messages/messages';
 import { InternetPage } from '../internet/internet';
-import { HomeRootPage } from '../../home-root/home-root';
+import { KadoPage } from '../kado/kado';
 
 @Component({
   selector: 'page-home',
@@ -25,8 +25,7 @@ export class HomePage {
               public location: Location,
               private alertCtrl: AlertController,
               private callNumber: CallNumber,
-              public popoverCtrl: PopoverController ) {
-              
+              public popoverCtrl: PopoverController ) {     
   }
 
   ionViewWillLeave() {
@@ -47,7 +46,9 @@ export class HomePage {
   goToInternet() {
     this.navCtrl.push(InternetPage);
   }
-  
+  goToKado() {
+    this.navCtrl.push(KadoPage);
+  }
   presentAlertTransfert() {
     let alert = this.alertCtrl.create({
       title: 'Désolé',
@@ -80,8 +81,6 @@ export class HomePage {
     });
     return alert.present();
   }
-
-  
   cptMattel() {
     this.callNumber.callNumber("*130#", true)
       .then(res => console.log('Launched dialer!', res))
