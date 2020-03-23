@@ -13,7 +13,7 @@ import { InternetPage } from '../pages/appMattel/internet/internet';
 import { MessagesPage } from '../pages/appMattel/messages/messages';
 import { PopoverCreditPage } from '../pages/appMattel/popover-credit/popover-credit';
 import { ConfortPage } from '../pages/appMattel/confort/confort';
-import { TransferPage } from '../pages/transfer/transfer';
+import { TransferPage } from '../pages/appMattel/transfer/transfer';
 import { KadoPage } from '../pages/appMattel/kado/kado';
 //Mauritel pages
 import { HomeMauritelPage } from '../pages/appMauritel/home-mauritel/home-mauritel';

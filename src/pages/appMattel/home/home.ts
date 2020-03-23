@@ -9,6 +9,8 @@ import { ConfortPage } from '../confort/confort';
 import { MessagesPage } from '../messages/messages';
 import { InternetPage } from '../internet/internet';
 import { KadoPage } from '../kado/kado';
+import { TransferPage } from '../transfer/transfer';
+
 
 @Component({
   selector: 'page-home',
@@ -88,6 +90,12 @@ export class HomePage {
   }
   presentPopover(myEvent) {
     let popover = this.popoverCtrl.create(PopoverCreditPage);
+    popover.present({
+      ev: myEvent
+    });
+  }
+  presentPopoverShare(myEvent) {
+    let popover = this.popoverCtrl.create(TransferPage);
     popover.present({
       ev: myEvent
     });

@@ -1,0 +1,42 @@
+<!--
+  Generated template for the TransferPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>transfer</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list radio-group [(ngModel)]="relationship">
+    <ion-item-divider>
+      Numéro du destinataire :
+    </ion-item-divider>
+    <ion-item>
+        <ion-input type="number" placeholder="ex: 32252527" id="inputTel" [(ngModel)]="inputTel" outline>Enter the Pin Number</ion-input>
+    </ion-item>
+    <ion-item-divider>
+     Montant du transfert (MRU) :
+    </ion-item-divider>
+    <ion-item>
+        <ion-input type="number" placeholder="ex: 200 MRU" id="inputAmount" [(ngModel)]="inputAmount" outline>Enter the Pin Number</ion-input>
+    </ion-item>
+    <ion-item-divider>
+    Votre code PIN :
+    </ion-item-divider>
+    <ion-item>
+        <ion-input type="password" placeholder="ex: 1234" id="inputPin" [(ngModel)]="inputPin" outline>Enter the Pin Number</ion-input>
+    </ion-item>
+     
+  </ion-list>
+  
+  <button class="btn-pop-credit" ion-button full (click)="transfert()" >Recharge</button>
+
+
+</ion-content>
